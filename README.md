@@ -1,0 +1,2 @@
+# LogoGen
+Generates Logos
