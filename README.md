@@ -59,7 +59,11 @@ This project is licensed under the MIT License.
 
 ## Link
 
-## Photo
+[GitHub](https://github.com/M1TCH3llM/LogoGen)
+
+## Video Link
+
+[Video](https://drive.google.com/file/d/1fckpC-sqL48Cx441CrU8XvaUczoV4kYb/view)
 
 **Have a question or need help?** Contact us at [your_email@example.com].
 

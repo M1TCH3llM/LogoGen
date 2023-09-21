@@ -1,7 +1,7 @@
 <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
         
-          <polyline points="150, 25 50, 175 250, 175" stroke="blue" stroke-width="10"  fill="blue" transform="translate(-3, -20)"/>
+          <rect x="75" y="25" width="150" height="150" stroke="white" stroke-width="10"  fill="pink" rx="15"/>
         
-          <text x="150" y="125" font-family="monospace" font-size="60" font-weight="normal" text-anchor="middle" fill="blue">DDD</text>
+          <text x="150" y="125" font-family="cursive" font-size="60" font-weight="normal" text-anchor="middle" fill="green">COL</text>
         
         </svg>
