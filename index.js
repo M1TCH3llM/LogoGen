@@ -26,14 +26,14 @@ const questions = [
     choices: ["Yes", "No"],
   },
   {
-    name: "outLine",
+    name: "strokeWidth",
     type: "list",
     message: "How thicc would you like your outline?",
-    choices: ["5", "10", "15"],
+    choices: ["5", "10", "15", "none"],
     when: (answer) => answer.outLineChoice === "Yes",
   },
   {
-    name: "outLineColor",
+    name: "lineColor",
     type: "list",
     message: "What color would you like your out line?",
     choices: [
@@ -47,11 +47,12 @@ const questions = [
       "orange",
       "white",
     ],
+    when: (answer) => answer.outLineChoice === "Yes",
   },
   {
     name: "shapeColorChoice",
     type: "list",
-    message: "Basic or custom color?",
+    message: "Basic or custom color for your shape?",
     choices: ["Basic Colors", "Custom Color"],
   },
   {
@@ -118,7 +119,7 @@ const questions = [
   {
     name: "textColorChoice",
     type: "list",
-    message: "Choose a shape?",
+    message: "Choose a text color?",
     choices: ["Basic Colors", "Custom Color"],
   },
   {
@@ -153,8 +154,8 @@ function bananas() {
     const {
       shape,
       shapeColor,
-      outLine,
-      outLineColor,
+      strokeWidth,
+      lineColor,
       text,
       textColor,
       textWeight,
@@ -166,16 +167,16 @@ function bananas() {
 
     switch (shape) {
       case "circle":
-        userShape = new Circle(shapeColor, outLine, outLineColor);
+        userShape = new Circle(shapeColor, strokeWidth, lineColor);
         break;
       case "square":
-        userShape = new Square(shapeColor, outLine, outLineColor, corner);
+        userShape = new Square(shapeColor, strokeWidth, lineColor, corner);
         break;
       case "triangle":
-        userShape = new Triangle(shapeColor, outLine, outLineColor);
+        userShape = new Triangle(shapeColor, strokeWidth, lineColor);
         break;
       case "banana":
-        userShape = new Banana(shapeColor, outLine, outLineColor);
+        userShape = new Banana(shapeColor, strokeWidth, lineColor);
         break;
     }
 
